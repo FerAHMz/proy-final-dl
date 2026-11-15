@@ -1,0 +1,308 @@
+{
+  "filas_total": 40428967,
+  "ctr_global": 0.16980562476404604,
+  "por_dia": {
+    "21": {
+      "filas": 4122995,
+      "ctr": 0.17419812539185714
+    },
+    "22": {
+      "filas": 5337126,
+      "ctr": 0.15716698462805637
+    },
+    "23": {
+      "filas": 3870752,
+      "ctr": 0.18218966237051612
+    },
+    "24": {
+      "filas": 3335302,
+      "ctr": 0.17471581284093615
+    },
+    "25": {
+      "filas": 3363122,
+      "ctr": 0.1824019467625617
+    },
+    "26": {
+      "filas": 3835892,
+      "ctr": 0.18304894924048956
+    },
+    "27": {
+      "filas": 3225010,
+      "ctr": 0.18159416559948652
+    },
+    "28": {
+      "filas": 5287222,
+      "ctr": 0.15218237478963434
+    },
+    "29": {
+      "filas": 3832608,
+      "ctr": 0.1565620590469988
+    },
+    "30": {
+      "filas": 4218938,
+      "ctr": 0.16928075264438586
+    }
+  },
+  "splits": {
+    "train": {
+      "filas": 32377421,
+      "ctr": 0.17144169697765613
+    },
+    "val": {
+      "filas": 3832608,
+      "ctr": 0.1565620590469988
+    },
+    "test": {
+      "filas": 4218938,
+      "ctr": 0.16928075264438586
+    }
+  },
+  "ctr_por_grupo": {
+    "banner_pos": {
+      "0": {
+        "ctr": 0.16427235835338114,
+        "n": 29109590
+      },
+      "1": {
+        "ctr": 0.18361449459522755,
+        "n": 11247282
+      },
+      "7": {
+        "ctr": 0.3201000527801363,
+        "n": 43577
+      },
+      "2": {
+        "ctr": 0.11922159833858934,
+        "n": 13001
+      },
+      "4": {
+        "ctr": 0.1853582554517134,
+        "n": 7704
+      },
+      "5": {
+        "ctr": 0.12149532710280374,
+        "n": 5778
+      },
+      "3": {
+        "ctr": 0.1828009828009828,
+        "n": 2035
+      }
+    },
+    "device_type": {
+      "1": {
+        "ctr": 0.16917577631774597,
+        "n": 37304667
+      },
+      "0": {
+        "ctr": 0.21073148019733323,
+        "n": 2220812
+      },
+      "4": {
+        "ctr": 0.09544449495784427,
+        "n": 774272
+      },
+      "5": {
+        "ctr": 0.09384216433796494,
+        "n": 129185
+      }
+    },
+    "device_conn_type": {
+      "0": {
+        "ctr": 0.18112530003435678,
+        "n": 34886838
+      },
+      "2": {
+        "ctr": 0.13528943828123047,
+        "n": 3317443
+      },
+      "3": {
+        "ctr": 0.04404261443324674,
+        "n": 2181796
+      },
+      "5": {
+        "ctr": 0.029610631848915832,
+        "n": 42890
+      }
+    },
+    "is_app": {
+      "False": {
+        "ctr": 0.19861002453080054,
+        "n": 25832830
+      },
+      "True": {
+        "ctr": 0.11882644017386244,
+        "n": 14596137
+      }
+    }
+  },
+  "campos": {
+    "C1": {
+      "unicos": 7,
+      "nulos": 0,
+      "top_valor": "1005",
+      "top_frac": 0.9173357260295686,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "banner_pos": {
+      "unicos": 7,
+      "nulos": 0,
+      "top_valor": "0",
+      "top_frac": 0.7195114768406045,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "site_id": {
+      "unicos": 4551,
+      "nulos": 0,
+      "top_valor": "85f751fd",
+      "top_frac": 0.3472217876772829,
+      "cobertura_top100": 0.9085424685307703,
+      "frac_categorias_con_menos_de_5": 0.24785761371127224
+    },
+    "site_domain": {
+      "unicos": 7299,
+      "nulos": 0,
+      "top_valor": "c4e18dd6",
+      "top_frac": 0.36023767921478367,
+      "cobertura_top100": 0.9360299574200182,
+      "frac_categorias_con_menos_de_5": 0.43786820112344155
+    },
+    "site_category": {
+      "unicos": 26,
+      "nulos": 0,
+      "top_valor": "50e219e0",
+      "top_frac": 0.3955201064346663,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.11538461538461539
+    },
+    "app_id": {
+      "unicos": 8095,
+      "nulos": 0,
+      "top_valor": "ecad2386",
+      "top_frac": 0.6527782123227172,
+      "cobertura_top100": 0.9477018876827774,
+      "frac_categorias_con_menos_de_5": 0.41297096973440395
+    },
+    "app_domain": {
+      "unicos": 539,
+      "nulos": 0,
+      "top_valor": "7801e8d9",
+      "top_frac": 0.6884247821962102,
+      "cobertura_top100": 0.999827472361063,
+      "frac_categorias_con_menos_de_5": 0.45640074211502785
+    },
+    "app_category": {
+      "unicos": 36,
+      "nulos": 0,
+      "top_valor": "07d7df22",
+      "top_frac": 0.661742731145881,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.16666666666666666
+    },
+    "device_id": {
+      "unicos": 2217500,
+      "nulos": 0,
+      "top_valor": "a99f214a",
+      "top_frac": 0.8262680959054769,
+      "cobertura_top100": 0.8299133831567376,
+      "frac_categorias_con_menos_de_5": 0.8995039458850056
+    },
+    "device_ip": {
+      "unicos": 5566572,
+      "nulos": 0,
+      "top_valor": "6b9769f2",
+      "top_frac": 0.005368339868700475,
+      "cobertura_top100": 0.0754383741682205,
+      "frac_categorias_con_menos_de_5": 0.8212319898134794
+    },
+    "device_model": {
+      "unicos": 8036,
+      "nulos": 0,
+      "top_valor": "8a4875bd",
+      "top_frac": 0.06097968704795852,
+      "cobertura_top100": 0.6430873231070504,
+      "frac_categorias_con_menos_de_5": 0.2065704330512693
+    },
+    "device_type": {
+      "unicos": 5,
+      "nulos": 0,
+      "top_valor": "1",
+      "top_frac": 0.9215189190022269,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "device_conn_type": {
+      "unicos": 4,
+      "nulos": 0,
+      "top_valor": "0",
+      "top_frac": 0.8655623312307673,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "C14": {
+      "unicos": 2252,
+      "nulos": 0,
+      "top_valor": "4687",
+      "top_frac": 0.025407860619905458,
+      "cobertura_top100": 0.6772456336160931,
+      "frac_categorias_con_menos_de_5": 0.055062166962699825
+    },
+    "C15": {
+      "unicos": 8,
+      "nulos": 0,
+      "top_valor": "320",
+      "top_frac": 0.9318656973944898,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "C16": {
+      "unicos": 9,
+      "nulos": 0,
+      "top_valor": "50",
+      "top_frac": 0.9403939554049101,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "C17": {
+      "unicos": 372,
+      "nulos": 0,
+      "top_valor": "1722",
+      "top_frac": 0.12484144428921624,
+      "cobertura_top100": 0.8913693589121876,
+      "frac_categorias_con_menos_de_5": 0.008064516129032258
+    },
+    "C18": {
+      "unicos": 4,
+      "nulos": 0,
+      "top_valor": "0",
+      "top_frac": 0.4176844412654115,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    },
+    "C19": {
+      "unicos": 63,
+      "nulos": 0,
+      "top_valor": "35",
+      "top_frac": 0.3084868618782206,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.015873015873015872
+    },
+    "C20": {
+      "unicos": 172,
+      "nulos": 0,
+      "top_valor": "-1",
+      "top_frac": 0.4652284998239977,
+      "cobertura_top100": 0.9954426574000443,
+      "frac_categorias_con_menos_de_5": 0.029069767441860465
+    },
+    "C21": {
+      "unicos": 52,
+      "nulos": 0,
+      "top_valor": "23",
+      "top_frac": 0.20828774472185416,
+      "cobertura_top100": 1.0,
+      "frac_categorias_con_menos_de_5": 0.0
+    }
+  }
+}
