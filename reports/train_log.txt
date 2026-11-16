@@ -1,0 +1,20 @@
+[it1_lr] device=mps params=1,239,852 train=32,377,421
+  ep1 (18s) train auc=0.7669 ll=0.3896 | val auc=0.7461 ll=0.3817 | test auc=0.7369
+  ep2 (13s) train auc=0.7780 ll=0.3835 | val auc=0.7467 ll=0.3817 | test auc=0.7375
+  ep3 (9s) train auc=0.7849 ll=0.3793 | val auc=0.7462 ll=0.3812 | test auc=0.7365
+[it2_widedeep] device=mps params=21,205,725 train=32,377,421
+  ep1 (80s) train auc=0.8135 ll=0.3608 | val auc=0.7516 ll=0.3786 | test auc=0.7415
+  ep2 (74s) train auc=0.8292 ll=0.3483 | val auc=0.7493 ll=0.3811 | test auc=0.7384
+  val logloss empeoró → early stopping (mejor época = 1)
+[it3_deepfm] device=mps params=21,205,725 train=32,377,421
+  ep1 (80s) train auc=0.8148 ll=0.3600 | val auc=0.7517 ll=0.3785 | test auc=0.7412
+  ep2 (81s) train auc=0.8316 ll=0.3462 | val auc=0.7481 ll=0.3820 | test auc=0.7384
+  val logloss empeoró → early stopping (mejor época = 1)
+[it4_deepfm_tuned] device=mps params=31,541,077 train=32,377,421
+  ep1 (170s) train auc=0.8155 ll=0.3593 | val auc=0.7510 ll=0.3786 | test auc=0.7416
+  ep2 (151s) train auc=0.8357 ll=0.3431 | val auc=0.7460 ll=0.3829 | test auc=0.7361
+  val logloss empeoró → early stopping (mejor época = 1)
+[it5_deepfm_reg] device=mps params=21,205,725 train=32,377,421
+  ep1 (92s) train auc=0.8113 ll=0.3624 | val auc=0.7526 ll=0.3786 | test auc=0.7412
+  ep2 (91s) train auc=0.8271 ll=0.3498 | val auc=0.7482 ll=0.3814 | test auc=0.7383
+  val logloss empeoró → early stopping (mejor época = 1)
