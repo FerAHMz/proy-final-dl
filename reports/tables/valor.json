@@ -1,0 +1,968 @@
+{
+  "supuestos": {
+    "value_per_click": 0.03,
+    "market_k": 1.2,
+    "market_sigma": 0.5,
+    "monthly_requests": 300000000.0,
+    "bid_multiplier": 1.0,
+    "infra_usd_per_million": 0.0,
+    "gpu_usd_hora": 1.006,
+    "reentrenos_mes": 30
+  },
+  "precio_mercado_test": {
+    "mediana_cpm": 5.430207386089757,
+    "media_cpm": 7.257572835330393,
+    "p10_cpm": 1.3534707947021256,
+    "p90_cpm": 15.319437944261054
+  },
+  "comparacion": {
+    "it0_base": {
+      "auc": 0.5,
+      "logloss": 0.4547604024410248,
+      "alpha_1": {
+        "impresiones_compradas": 2017818,
+        "win_rate": 0.4782762865915546,
+        "clics": 177781,
+        "ctr_comprado": 0.08810556749915008,
+        "gasto": 5267.9520810254635,
+        "ingreso": 5333.429999999999,
+        "utilidad": 65.4779189745359,
+        "roi": 0.01242948264665876,
+        "cpc_efectivo": 0.029631693381325694,
+        "VP": 177781,
+        "FP": 1840037,
+        "FN_rentable": 514225,
+        "utilidad_mensual": 4656.0000863631485,
+        "gasto_mensual": 374593.23277745233,
+        "clics_mensuales": 12641641.095460517,
+        "infra_mensual": 0.0
+      },
+      "alpha_opt_val": 0.8,
+      "opt": {
+        "impresiones_compradas": 1662192,
+        "win_rate": 0.3939835095941206,
+        "clics": 124607,
+        "ctr_comprado": 0.07496546728657098,
+        "gasto": 3625.5026281071127,
+        "ingreso": 3738.21,
+        "utilidad": 112.7073718928873,
+        "roi": 0.031087378345587408,
+        "cpc_efectivo": 0.029095497268268336,
+        "VP": 124607,
+        "FP": 1537585,
+        "FN_rentable": 567399,
+        "utilidad_mensual": 8014.389300782848,
+        "gasto_mensual": 257802.03179855543,
+        "clics_mensuales": 8860547.369977944,
+        "infra_mensual": 0.0
+      },
+      "utilidad_mensual_val": 16292.244064270628,
+      "ic95_utilidad_mensual": [
+        6510.836757396469,
+        9575.951040271035
+      ],
+      "horas_entrenamiento": 0.0,
+      "costo_entrenamiento_mensual": 0.0,
+      "costo_inferencia_mensual": 0.0,
+      "valor_neto_mensual": 8014.389300782848,
+      "delta_vs_lr_mensual": -132517.02104374833,
+      "delta_vs_regla_mensual": -116335.03098476597
+    },
+    "it0_regla": {
+      "auc": 0.7258913265402199,
+      "logloss": 0.4061990976333618,
+      "alpha_1": {
+        "impresiones_compradas": 1507563,
+        "win_rate": 0.35733234287870547,
+        "clics": 255186,
+        "ctr_comprado": 0.16927053794766786,
+        "gasto": 5924.872800441738,
+        "ingreso": 7655.58,
+        "utilidad": 1730.707199558262,
+        "roi": 0.2921087520105455,
+        "cpc_efectivo": 0.023217859915676167,
+        "VP": 255186,
+        "FP": 1252377,
+        "FN_rentable": 436820,
+        "utilidad_mensual": 123067.0277371885,
+        "gasto_mensual": 421305.51340942236,
+        "clics_mensuales": 18145751.371553697,
+        "infra_mensual": 0.0
+      },
+      "alpha_opt_val": 0.95,
+      "opt": {
+        "impresiones_compradas": 1349135,
+        "win_rate": 0.3197807125869117,
+        "clics": 228276,
+        "ctr_comprado": 0.1692017477865447,
+        "gasto": 5099.538351597757,
+        "ingreso": 6848.28,
+        "utilidad": 1748.7416484022424,
+        "roi": 0.3429215603122853,
+        "cpc_efectivo": 0.022339353903160022,
+        "VP": 228276,
+        "FP": 1120859,
+        "FN_rentable": 463730,
+        "utilidad_mensual": 124349.42028554881,
+        "gasto_mensual": 362617.67901764077,
+        "clics_mensuales": 16232236.643439652,
+        "infra_mensual": 0.0
+      },
+      "utilidad_mensual_val": 114457.89707273246,
+      "ic95_utilidad_mensual": [
+        122852.17431528485,
+        125810.23715745025
+      ],
+      "horas_entrenamiento": 0.0,
+      "costo_entrenamiento_mensual": 0.0,
+      "costo_inferencia_mensual": 0.0,
+      "valor_neto_mensual": 124349.42028554881,
+      "delta_vs_lr_mensual": -16181.990058982366,
+      "delta_vs_regla_mensual": 0.0
+    },
+    "it1_lr": {
+      "auc": 0.7364629571607895,
+      "logloss": 0.4022250771522522,
+      "alpha_1": {
+        "impresiones_compradas": 1569716,
+        "win_rate": 0.37206424934426624,
+        "clics": 279886,
+        "ctr_comprado": 0.1783035912228709,
+        "gasto": 6439.546381391576,
+        "ingreso": 8396.58,
+        "utilidad": 1957.0336186084241,
+        "roi": 0.30390861447379036,
+        "cpc_efectivo": 0.023007747373543427,
+        "VP": 279886,
+        "FP": 1289830,
+        "FN_rentable": 412120,
+        "utilidad_mensual": 139160.61745386355,
+        "gasto_mensual": 457902.8927226408,
+        "clics_mensuales": 19902117.547117308,
+        "infra_mensual": 0.016237014885215707
+      },
+      "alpha_opt_val": 0.9,
+      "opt": {
+        "impresiones_compradas": 1305301,
+        "win_rate": 0.3093908941065263,
+        "clics": 231192,
+        "ctr_comprado": 0.17711776823889663,
+        "gasto": 4959.443309260598,
+        "ingreso": 6935.759999999999,
+        "utilidad": 1976.3166907394016,
+        "roi": 0.3984956712881652,
+        "cpc_efectivo": 0.02145162163595885,
+        "VP": 231192,
+        "FP": 1074109,
+        "FN_rentable": 460814,
+        "utilidad_mensual": 140531.79703490817,
+        "gasto_mensual": 352655.80882633955,
+        "clics_mensuales": 16439587.403275423,
+        "infra_mensual": 0.016237014885215707
+      },
+      "utilidad_mensual_val": 142130.12154348977,
+      "ic95_utilidad_mensual": [
+        139142.15656924286,
+        141874.15292616567
+      ],
+      "horas_entrenamiento": 0.012812802418888573,
+      "costo_entrenamiento_mensual": 0.38669037700205716,
+      "costo_inferencia_mensual": 0.016237014885215707,
+      "valor_neto_mensual": 140531.41034453118,
+      "delta_vs_lr_mensual": 0.0,
+      "delta_vs_regla_mensual": 16181.990058982366
+    },
+    "it2_widedeep": {
+      "auc": 0.7415070287345129,
+      "logloss": 0.400293231010437,
+      "alpha_1": {
+        "impresiones_compradas": 1716764,
+        "win_rate": 0.4069185183569894,
+        "clics": 307368,
+        "ctr_comprado": 0.1790391690412893,
+        "gasto": 7174.77852244852,
+        "ingreso": 9221.039999999999,
+        "utilidad": 2046.2614775514794,
+        "roi": 0.2852020408921496,
+        "cpc_efectivo": 0.023342633333491188,
+        "VP": 307368,
+        "FP": 1409396,
+        "FN_rentable": 384638,
+        "utilidad_mensual": 145505.33464265807,
+        "gasto_mensual": 510183.73740845587,
+        "clics_mensuales": 21856306.018244404,
+        "infra_mensual": 0.10849621806604166
+      },
+      "alpha_opt_val": 0.9,
+      "opt": {
+        "impresiones_compradas": 1462316,
+        "win_rate": 0.34660760598994345,
+        "clics": 259608,
+        "ctr_comprado": 0.17753207924962866,
+        "gasto": 5670.2037360650875,
+        "ingreso": 7788.24,
+        "utilidad": 2118.0362639349123,
+        "roi": 0.3735379472281099,
+        "cpc_efectivo": 0.021841406027799944,
+        "VP": 259608,
+        "FP": 1202708,
+        "FN_rentable": 432398,
+        "utilidad_mensual": 150609.09201359595,
+        "gasto_mensual": 403196.52026636235,
+        "clics_mensuales": 18460190.692539215,
+        "infra_mensual": 0.10849621806604166
+      },
+      "utilidad_mensual_val": 152615.03870677363,
+      "ic95_utilidad_mensual": [
+        148991.7492757313,
+        152234.20203063064
+      ],
+      "horas_entrenamiento": 0.04434081543972651,
+      "costo_entrenamiento_mensual": 1.3382058099709462,
+      "costo_inferencia_mensual": 0.10849621806604166,
+      "valor_neto_mensual": 150607.75380778598,
+      "delta_vs_lr_mensual": 10076.343463254801,
+      "delta_vs_regla_mensual": 26258.333522237168
+    },
+    "it3_deepfm": {
+      "auc": 0.7411510700524706,
+      "logloss": 0.400363951921463,
+      "alpha_1": {
+        "impresiones_compradas": 1715306,
+        "win_rate": 0.4065729337572631,
+        "clics": 302630,
+        "ctr_comprado": 0.17642916191046962,
+        "gasto": 7030.789403160781,
+        "ingreso": 9078.9,
+        "utilidad": 2048.1105968392185,
+        "roi": 0.2913059230473415,
+        "cpc_efectivo": 0.023232294891982887,
+        "VP": 302630,
+        "FP": 1412676,
+        "FN_rentable": 389376,
+        "utilidad_mensual": 145636.80005986604,
+        "gasto_mensual": 499944.96741792234,
+        "clics_mensuales": 21519396.587482445,
+        "infra_mensual": 0.1301466848720641
+      },
+      "alpha_opt_val": 0.9,
+      "opt": {
+        "impresiones_compradas": 1461720,
+        "win_rate": 0.34646633821118017,
+        "clics": 255512,
+        "ctr_comprado": 0.1748022877158416,
+        "gasto": 5554.677626661423,
+        "ingreso": 7665.36,
+        "utilidad": 2110.6823733385763,
+        "roi": 0.37998287483105986,
+        "cpc_efectivo": 0.02173940021079802,
+        "VP": 255512,
+        "FP": 1206208,
+        "FN_rentable": 436494,
+        "utilidad_mensual": 150086.15033469998,
+        "gasto_mensual": 394981.69634121837,
+        "clics_mensuales": 18168932.560753442,
+        "infra_mensual": 0.1301466848720641
+      },
+      "utilidad_mensual_val": 153158.11136689133,
+      "ic95_utilidad_mensual": [
+        148440.1631326987,
+        151727.30571429644
+      ],
+      "horas_entrenamiento": 0.046427370694453,
+      "costo_entrenamiento_mensual": 1.4011780475585913,
+      "costo_inferencia_mensual": 0.1301466848720641,
+      "valor_neto_mensual": 150084.74915665243,
+      "delta_vs_lr_mensual": 9553.338812121248,
+      "delta_vs_regla_mensual": 25735.328871103615
+    },
+    "it4_deepfm_grande": {
+      "auc": 0.7416076076875857,
+      "logloss": 0.3999769389629364,
+      "alpha_1": {
+        "impresiones_compradas": 1682926,
+        "win_rate": 0.39889801651505663,
+        "clics": 300120,
+        "ctr_comprado": 0.1783322617869116,
+        "gasto": 6927.227123417917,
+        "ingreso": 9003.6,
+        "utilidad": 2076.3728765820833,
+        "roi": 0.29974083996218015,
+        "cpc_efectivo": 0.023081524468272413,
+        "VP": 300120,
+        "FP": 1382806,
+        "FN_rentable": 391886,
+        "utilidad_mensual": 147646.4330934389,
+        "gasto_mensual": 492580.86680235056,
+        "clics_mensuales": 21340915.652232863,
+        "infra_mensual": 0.1696711963935134
+      },
+      "alpha_opt_val": 0.9,
+      "opt": {
+        "impresiones_compradas": 1430252,
+        "win_rate": 0.33900758911365847,
+        "clics": 253274,
+        "ctr_comprado": 0.1770834789953099,
+        "gasto": 5464.115358253446,
+        "ingreso": 7598.219999999999,
+        "utilidad": 2134.104641746553,
+        "roi": 0.3905672742657285,
+        "cpc_efectivo": 0.021573929255483966,
+        "VP": 253274,
+        "FP": 1176978,
+        "FN_rentable": 438732,
+        "utilidad_mensual": 151751.62012139263,
+        "gasto_mensual": 388541.9997819437,
+        "clics_mensuales": 18009792.98581776,
+        "infra_mensual": 0.1696711963935134
+      },
+      "utilidad_mensual_val": 152730.20386183914,
+      "ic95_utilidad_mensual": [
+        149963.8231917968,
+        153221.27479898176
+      ],
+      "horas_entrenamiento": 0.09246291962972868,
+      "costo_entrenamiento_mensual": 2.7905309144252115,
+      "costo_inferencia_mensual": 0.1696711963935134,
+      "valor_neto_mensual": 151748.8295904782,
+      "delta_vs_lr_mensual": 11217.419245947036,
+      "delta_vs_regla_mensual": 27399.409304929402
+    },
+    "it5_deepfm_reg": {
+      "auc": 0.7411518063976796,
+      "logloss": 0.40110281109809875,
+      "alpha_1": {
+        "impresiones_compradas": 1834666,
+        "win_rate": 0.4348644137458289,
+        "clics": 315252,
+        "ctr_comprado": 0.17183073104314356,
+        "gasto": 7468.256623305394,
+        "ingreso": 9457.56,
+        "utilidad": 1989.3033766946055,
+        "roi": 0.26636783884565485,
+        "cpc_efectivo": 0.023689799345619992,
+        "VP": 315252,
+        "FP": 1519414,
+        "FN_rentable": 376754,
+        "utilidad_mensual": 141455.1398919469,
+        "gasto_mensual": 531052.3612794543,
+        "clics_mensuales": 22416921.03557815,
+        "infra_mensual": 0.1298959432460833
+      },
+      "alpha_opt_val": 0.9,
+      "opt": {
+        "impresiones_compradas": 1576585,
+        "win_rate": 0.3736923841971605,
+        "clics": 266956,
+        "ctr_comprado": 0.16932547246104715,
+        "gasto": 5931.029384170797,
+        "ingreso": 8008.679999999999,
+        "utilidad": 2077.6506158292023,
+        "roi": 0.3503018584554987,
+        "cpc_efectivo": 0.022217254469541037,
+        "VP": 266956,
+        "FP": 1309629,
+        "FN_rentable": 425050,
+        "utilidad_mensual": 147737.33027738964,
+        "gasto_mensual": 421743.2954101812,
+        "clics_mensuales": 18982691.852783807,
+        "infra_mensual": 0.1298959432460833
+      },
+      "utilidad_mensual_val": 154262.02482352022,
+      "ic95_utilidad_mensual": [
+        146107.18296198497,
+        149172.6657264507
+      ],
+      "horas_entrenamiento": 0.0527039211344446,
+      "costo_entrenamiento_mensual": 1.590604339837538,
+      "costo_inferencia_mensual": 0.1298959432460833,
+      "valor_neto_mensual": 147735.7396730498,
+      "delta_vs_lr_mensual": 7204.329328518623,
+      "delta_vs_regla_mensual": 23386.31938750099
+    }
+  },
+  "curva_umbral_final": [
+    {
+      "umbral": 0.02,
+      "utilidad_mensual": -637722.8410462545,
+      "win_rate": 0.9549279937273314
+    },
+    {
+      "umbral": 0.03,
+      "utilidad_mensual": -625987.440659645,
+      "win_rate": 0.9319044271330842
+    },
+    {
+      "umbral": 0.04,
+      "utilidad_mensual": -611069.5864642343,
+      "win_rate": 0.9073288111842364
+    },
+    {
+      "umbral": 0.05,
+      "utilidad_mensual": -593874.2259511633,
+      "win_rate": 0.8805339163552534
+    },
+    {
+      "umbral": 0.06,
+      "utilidad_mensual": -577038.8125888361,
+      "win_rate": 0.8532436361947011
+    },
+    {
+      "umbral": 0.07,
+      "utilidad_mensual": -557885.0015049127,
+      "win_rate": 0.821492754811756
+    },
+    {
+      "umbral": 0.08,
+      "utilidad_mensual": -538399.9459902671,
+      "win_rate": 0.7898767414927643
+    },
+    {
+      "umbral": 0.09,
+      "utilidad_mensual": -519213.7474998277,
+      "win_rate": 0.7596534957375529
+    },
+    {
+      "umbral": 0.1,
+      "utilidad_mensual": -498767.4118158673,
+      "win_rate": 0.7266312043457382
+    },
+    {
+      "umbral": 0.11,
+      "utilidad_mensual": -476970.95297533076,
+      "win_rate": 0.6895590786117265
+    },
+    {
+      "umbral": 0.12,
+      "utilidad_mensual": -450354.29718513787,
+      "win_rate": 0.641485606093287
+    },
+    {
+      "umbral": 0.13,
+      "utilidad_mensual": -420581.61514763214,
+      "win_rate": 0.5831166516312873
+    },
+    {
+      "umbral": 0.14,
+      "utilidad_mensual": -398339.67721101275,
+      "win_rate": 0.5505428143291037
+    },
+    {
+      "umbral": 0.15,
+      "utilidad_mensual": -378092.7059374116,
+      "win_rate": 0.5231951737617382
+    },
+    {
+      "umbral": 0.16,
+      "utilidad_mensual": -357991.92650300544,
+      "win_rate": 0.4964962746549013
+    },
+    {
+      "umbral": 0.17,
+      "utilidad_mensual": -338427.67193201795,
+      "win_rate": 0.4711370491815713
+    },
+    {
+      "umbral": 0.18,
+      "utilidad_mensual": -320441.5305762591,
+      "win_rate": 0.4473597383986207
+    },
+    {
+      "umbral": 0.19,
+      "utilidad_mensual": -302637.89863476093,
+      "win_rate": 0.4247080663427621
+    },
+    {
+      "umbral": 0.2,
+      "utilidad_mensual": -286102.17258741613,
+      "win_rate": 0.4043425146328294
+    },
+    {
+      "umbral": 0.21,
+      "utilidad_mensual": -269224.01815765834,
+      "win_rate": 0.384652725401511
+    },
+    {
+      "umbral": 0.22,
+      "utilidad_mensual": -251234.0844723612,
+      "win_rate": 0.36349906066408183
+    },
+    {
+      "umbral": 0.23,
+      "utilidad_mensual": -232995.10891485758,
+      "win_rate": 0.341121865265619
+    },
+    {
+      "umbral": 0.24,
+      "utilidad_mensual": -215746.4278941881,
+      "win_rate": 0.31972714460368934
+    },
+    {
+      "umbral": 0.25,
+      "utilidad_mensual": -199067.28489095715,
+      "win_rate": 0.29822623608121285
+    },
+    {
+      "umbral": 0.26,
+      "utilidad_mensual": -184543.20969206782,
+      "win_rate": 0.2772309050287063
+    },
+    {
+      "umbral": 0.27,
+      "utilidad_mensual": -170846.13931875775,
+      "win_rate": 0.25629933409782274
+    },
+    {
+      "umbral": 0.28,
+      "utilidad_mensual": -154921.36318521693,
+      "win_rate": 0.2353680001934136
+    },
+    {
+      "umbral": 0.29,
+      "utilidad_mensual": -140006.78626541232,
+      "win_rate": 0.21482799699829672
+    },
+    {
+      "umbral": 0.3,
+      "utilidad_mensual": -126117.14202010179,
+      "win_rate": 0.19454374536909524
+    },
+    {
+      "umbral": 0.31,
+      "utilidad_mensual": -113432.66210341679,
+      "win_rate": 0.17528605540067194
+    },
+    {
+      "umbral": 0.32,
+      "utilidad_mensual": -102165.94731795197,
+      "win_rate": 0.15724312611372815
+    },
+    {
+      "umbral": 0.33,
+      "utilidad_mensual": -92545.52982853184,
+      "win_rate": 0.14113670312291862
+    },
+    {
+      "umbral": 0.34,
+      "utilidad_mensual": -84299.0341304063,
+      "win_rate": 0.12653587229772043
+    },
+    {
+      "umbral": 0.35,
+      "utilidad_mensual": -77175.79131835373,
+      "win_rate": 0.11310073767379374
+    },
+    {
+      "umbral": 0.36,
+      "utilidad_mensual": -69172.89287927545,
+      "win_rate": 0.10029301212769659
+    },
+    {
+      "umbral": 0.37,
+      "utilidad_mensual": -61174.55457434538,
+      "win_rate": 0.08757251232419154
+    },
+    {
+      "umbral": 0.38,
+      "utilidad_mensual": -53382.20298931844,
+      "win_rate": 0.07575840175892606
+    },
+    {
+      "umbral": 0.39,
+      "utilidad_mensual": -45387.04940589531,
+      "win_rate": 0.06520290177291062
+    },
+    {
+      "umbral": 0.4,
+      "utilidad_mensual": -38756.51609636841,
+      "win_rate": 0.0564646837663886
+    },
+    {
+      "umbral": 0.41,
+      "utilidad_mensual": -32743.721966778296,
+      "win_rate": 0.04961106325809955
+    },
+    {
+      "umbral": 0.42,
+      "utilidad_mensual": -28433.089431537137,
+      "win_rate": 0.04413741088397127
+    },
+    {
+      "umbral": 0.43,
+      "utilidad_mensual": -25046.161221412047,
+      "win_rate": 0.03961826412239289
+    },
+    {
+      "umbral": 0.44,
+      "utilidad_mensual": -22326.82356474735,
+      "win_rate": 0.03583413645803754
+    },
+    {
+      "umbral": 0.45,
+      "utilidad_mensual": -20008.605065466854,
+      "win_rate": 0.032791901658663865
+    },
+    {
+      "umbral": 0.46,
+      "utilidad_mensual": -18154.231836285326,
+      "win_rate": 0.03023675626425418
+    },
+    {
+      "umbral": 0.47,
+      "utilidad_mensual": -16836.306118649718,
+      "win_rate": 0.028095696120682502
+    },
+    {
+      "umbral": 0.48,
+      "utilidad_mensual": -15632.418569151867,
+      "win_rate": 0.02616037495692044
+    },
+    {
+      "umbral": 0.49,
+      "utilidad_mensual": -14582.012665599439,
+      "win_rate": 0.02438078018686219
+    },
+    {
+      "umbral": 0.5,
+      "utilidad_mensual": -13549.603121965998,
+      "win_rate": 0.022930415189794207
+    },
+    {
+      "umbral": 0.51,
+      "utilidad_mensual": -12902.449665024307,
+      "win_rate": 0.02146559157778569
+    },
+    {
+      "umbral": 0.52,
+      "utilidad_mensual": -12200.507027739972,
+      "win_rate": 0.020051965684255137
+    },
+    {
+      "umbral": 0.53,
+      "utilidad_mensual": -11508.385410316048,
+      "win_rate": 0.01853310003607543
+    },
+    {
+      "umbral": 0.54,
+      "utilidad_mensual": -10726.438400429506,
+      "win_rate": 0.017311465586837257
+    },
+    {
+      "umbral": 0.55,
+      "utilidad_mensual": -9959.880933170489,
+      "win_rate": 0.01608129818451942
+    },
+    {
+      "umbral": 0.56,
+      "utilidad_mensual": -9346.007764672042,
+      "win_rate": 0.014825768949437039
+    },
+    {
+      "umbral": 0.57,
+      "utilidad_mensual": -8836.602221015533,
+      "win_rate": 0.013583987249871888
+    },
+    {
+      "umbral": 0.58,
+      "utilidad_mensual": -8361.395364817155,
+      "win_rate": 0.01240264730128767
+    },
+    {
+      "umbral": 0.59,
+      "utilidad_mensual": -7933.754510381223,
+      "win_rate": 0.011227944093987634
+    },
+    {
+      "umbral": 0.6,
+      "utilidad_mensual": -7383.1591969518,
+      "win_rate": 0.010042574695338022
+    }
+  ],
+  "curva_valor_metrica": [
+    {
+      "fuente": "it5_deepfm_reg+ruido0",
+      "ruido": 0,
+      "auc": 0.7411518063976796,
+      "logloss": 0.401102804660994,
+      "utilidad_mensual": 147737.4601733329
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.1",
+      "ruido": 0.1,
+      "auc": 0.7397984370120814,
+      "logloss": 0.4017215139117422,
+      "utilidad_mensual": 145824.79621874978
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.2",
+      "ruido": 0.2,
+      "auc": 0.7358745962173995,
+      "logloss": 0.40359653115542615,
+      "utilidad_mensual": 139765.14233347873
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.3",
+      "ruido": 0.3,
+      "auc": 0.7293981655630118,
+      "logloss": 0.40676699882748735,
+      "utilidad_mensual": 130597.72038252672
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.45",
+      "ruido": 0.45,
+      "auc": 0.7172870903940879,
+      "logloss": 0.41339770397059256,
+      "utilidad_mensual": 114256.28893662839
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.6",
+      "ruido": 0.6,
+      "auc": 0.7031787949442223,
+      "logloss": 0.4223945512436126,
+      "utilidad_mensual": 96069.08445542963
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido0.8",
+      "ruido": 0.8,
+      "auc": 0.6836583481190723,
+      "logloss": 0.4372871981483142,
+      "utilidad_mensual": 72844.08831503574
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido1.0",
+      "ruido": 1.0,
+      "auc": 0.6665828131387541,
+      "logloss": 0.45376692342857705,
+      "utilidad_mensual": 54202.198268046624
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido1.3",
+      "ruido": 1.3,
+      "auc": 0.6438636603530763,
+      "logloss": 0.48073147650395204,
+      "utilidad_mensual": 29867.761993377855
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido1.6",
+      "ruido": 1.6,
+      "auc": 0.6261424041774113,
+      "logloss": 0.5076106538427859,
+      "utilidad_mensual": 14651.093285126197
+    },
+    {
+      "fuente": "it5_deepfm_reg+ruido2.0",
+      "ruido": 2.0,
+      "auc": 0.6074222379919592,
+      "logloss": 0.5424959088301313,
+      "utilidad_mensual": -2756.0330459383804
+    },
+    {
+      "fuente": "it1_lr/test_pred_e1",
+      "auc": 0.7368819555723515,
+      "logloss": 0.40276696971057907,
+      "utilidad_mensual": 139437.84921263813
+    },
+    {
+      "fuente": "it1_lr/test_pred_e2",
+      "auc": 0.7375003415851812,
+      "logloss": 0.4022462887403339,
+      "utilidad_mensual": 142021.0394057637
+    },
+    {
+      "fuente": "it1_lr/test_pred_e3",
+      "auc": 0.7364629571607895,
+      "logloss": 0.40222506857716667,
+      "utilidad_mensual": 140531.81327192305
+    },
+    {
+      "fuente": "it2_widedeep/test_pred_e1",
+      "auc": 0.7415070287345129,
+      "logloss": 0.4002932312357287,
+      "utilidad_mensual": 150609.20050981402
+    },
+    {
+      "fuente": "it2_widedeep/test_pred_e2",
+      "auc": 0.7383512721572096,
+      "logloss": 0.4032035955675022,
+      "utilidad_mensual": 146069.0111513014
+    },
+    {
+      "fuente": "it3_deepfm/test_pred_e1",
+      "auc": 0.7411510700524706,
+      "logloss": 0.40036396997906526,
+      "utilidad_mensual": 150086.28048138486
+    },
+    {
+      "fuente": "it3_deepfm/test_pred_e2",
+      "auc": 0.7383701642175895,
+      "logloss": 0.4035845772397869,
+      "utilidad_mensual": 146188.22926404976
+    },
+    {
+      "fuente": "it4_deepfm_grande/test_pred_e1",
+      "auc": 0.7416076076875857,
+      "logloss": 0.39997691266133945,
+      "utilidad_mensual": 151751.78979258903
+    },
+    {
+      "fuente": "it4_deepfm_grande/test_pred_e2",
+      "auc": 0.7361227677233959,
+      "logloss": 0.40426309625436796,
+      "utilidad_mensual": 143517.30770231973
+    },
+    {
+      "fuente": "it5_deepfm_reg/test_pred_e1",
+      "auc": 0.7411518063976796,
+      "logloss": 0.401102804660994,
+      "utilidad_mensual": 147737.4601733329
+    },
+    {
+      "fuente": "it5_deepfm_reg/test_pred_e2",
+      "auc": 0.7383111012513102,
+      "logloss": 0.4030843724216205,
+      "utilidad_mensual": 145584.70379987557
+    }
+  ],
+  "usd_mes_por_0.01_auc": 13619.93082219215,
+  "sensibilidad": [
+    {
+      "parametro": "value_per_click",
+      "factor": 0.5,
+      "it5_deepfm_reg": 73868.73008666644,
+      "it1_lr": 70265.90663596152,
+      "it0_regla": 62174.710142774406,
+      "delta": 3602.82345070492
+    },
+    {
+      "parametro": "value_per_click",
+      "factor": 0.8,
+      "it5_deepfm_reg": 118189.96153476635,
+      "it1_lr": 112425.44547238495,
+      "it0_regla": 99479.5313056957,
+      "delta": 5764.516062381401
+    },
+    {
+      "parametro": "value_per_click",
+      "factor": 1.2,
+      "it5_deepfm_reg": 177284.9182760818,
+      "it1_lr": 168638.14797708418,
+      "it0_regla": 149219.89889576065,
+      "delta": 8646.77029899761
+    },
+    {
+      "parametro": "value_per_click",
+      "factor": 1.5,
+      "it5_deepfm_reg": 221606.1482155662,
+      "it1_lr": 210797.68662533644,
+      "it0_regla": 186524.09781971428,
+      "delta": 10808.461590229766
+    },
+    {
+      "parametro": "market_k",
+      "factor": 0.5,
+      "it5_deepfm_reg": 560964.5188517403,
+      "it1_lr": 548649.8762865872,
+      "it0_regla": 530569.3661019149,
+      "delta": 12314.642565153074
+    },
+    {
+      "parametro": "market_k",
+      "factor": 0.8,
+      "it5_deepfm_reg": 254578.48156522875,
+      "it1_lr": 243403.43208130903,
+      "it0_regla": 223835.25050022744,
+      "delta": 11175.04948391972
+    },
+    {
+      "parametro": "market_k",
+      "factor": 1.2,
+      "it5_deepfm_reg": 86110.3272854457,
+      "it1_lr": 81294.19181156563,
+      "it0_regla": 70147.87397318058,
+      "delta": 4816.135473880073
+    },
+    {
+      "parametro": "market_k",
+      "factor": 1.5,
+      "it5_deepfm_reg": 38647.153176192616,
+      "it1_lr": 37043.32814506999,
+      "it0_regla": 29688.172341473146,
+      "delta": 1603.8250311226293
+    },
+    {
+      "parametro": "market_sigma",
+      "factor": 0.5,
+      "it5_deepfm_reg": 62754.76265866195,
+      "it1_lr": 55311.94157852875,
+      "it0_regla": 32813.78365418483,
+      "delta": 7442.8210801332025
+    },
+    {
+      "parametro": "market_sigma",
+      "factor": 0.8,
+      "it5_deepfm_reg": 113376.95775923238,
+      "it1_lr": 105882.95186290207,
+      "it0_regla": 87385.19311803469,
+      "delta": 7494.005896330302
+    },
+    {
+      "parametro": "market_sigma",
+      "factor": 1.2,
+      "it5_deepfm_reg": 180625.54959588303,
+      "it1_lr": 173582.54842525427,
+      "it0_regla": 159654.0274749484,
+      "delta": 7043.001170628762
+    },
+    {
+      "parametro": "market_sigma",
+      "factor": 1.5,
+      "it5_deepfm_reg": 225611.5399763721,
+      "it1_lr": 218970.99084993257,
+      "it0_regla": 207781.98285349522,
+      "delta": 6640.549126439524
+    },
+    {
+      "parametro": "monthly_requests",
+      "factor": 0.5,
+      "it5_deepfm_reg": 73868.73008666644,
+      "it1_lr": 70265.90663596152,
+      "it0_regla": 62174.710142774406,
+      "delta": 3602.82345070492
+    },
+    {
+      "parametro": "monthly_requests",
+      "factor": 0.8,
+      "it5_deepfm_reg": 118189.96813866631,
+      "it1_lr": 112425.45061753844,
+      "it0_regla": 99479.53622843906,
+      "delta": 5764.517521127869
+    },
+    {
+      "parametro": "monthly_requests",
+      "factor": 1.2,
+      "it5_deepfm_reg": 177284.95220799948,
+      "it1_lr": 168638.17592630765,
+      "it0_regla": 149219.30434265858,
+      "delta": 8646.776281691826
+    },
+    {
+      "parametro": "monthly_requests",
+      "factor": 1.5,
+      "it5_deepfm_reg": 221606.19025999933,
+      "it1_lr": 210797.71990788457,
+      "it0_regla": 186524.13042832323,
+      "delta": 10808.47035211476
+    },
+    {
+      "parametro": "precios_independientes",
+      "factor": 1.0,
+      "it5_deepfm_reg": 341008.18461708043,
+      "it1_lr": 333762.85779031814,
+      "it0_regla": 319698.54148061,
+      "it0_base": 120736.00297652763,
+      "delta": 7245.326826762292
+    }
+  ],
+  "final": "it5_deepfm_reg",
+  "referencia": "it1_lr"
+}

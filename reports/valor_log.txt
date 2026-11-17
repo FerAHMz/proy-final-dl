@@ -1,0 +1,25 @@
+it0_base           AUC=0.5000 ll=0.4548 α*=0.80 utilidad/mes=$8,014 [6,511; 9,576] (α=1: $4,656) ROI=3.1% win=39.4%
+it0_regla          AUC=0.7259 ll=0.4062 α*=0.95 utilidad/mes=$124,349 [122,852; 125,810] (α=1: $123,067) ROI=34.3% win=32.0%
+it1_lr             AUC=0.7365 ll=0.4022 α*=0.90 utilidad/mes=$140,532 [139,142; 141,874] (α=1: $139,161) ROI=39.8% win=30.9%
+it2_widedeep       AUC=0.7415 ll=0.4003 α*=0.90 utilidad/mes=$150,609 [148,992; 152,234] (α=1: $145,505) ROI=37.4% win=34.7%
+it3_deepfm         AUC=0.7412 ll=0.4004 α*=0.90 utilidad/mes=$150,086 [148,440; 151,727] (α=1: $145,637) ROI=38.0% win=34.6%
+it4_deepfm_grande  AUC=0.7416 ll=0.4000 α*=0.90 utilidad/mes=$151,752 [149,964; 153,221] (α=1: $147,646) ROI=39.1% win=33.9%
+it5_deepfm_reg     AUC=0.7412 ll=0.4011 α*=0.90 utilidad/mes=$147,737 [146,107; 149,173] (α=1: $141,455) ROI=35.0% win=37.4%
+Pendiente local: $13,620 al mes por cada +0.01 de AUC
+  sens value_per_click   ×0.5: final=$73,869 LR=$70,266 regla=$62,175 Δ(final-LR)=$3,603
+  sens value_per_click   ×0.8: final=$118,190 LR=$112,425 regla=$99,480 Δ(final-LR)=$5,765
+  sens value_per_click   ×1.2: final=$177,285 LR=$168,638 regla=$149,220 Δ(final-LR)=$8,647
+  sens value_per_click   ×1.5: final=$221,606 LR=$210,798 regla=$186,524 Δ(final-LR)=$10,808
+  sens market_k          ×0.5: final=$560,965 LR=$548,650 regla=$530,569 Δ(final-LR)=$12,315
+  sens market_k          ×0.8: final=$254,578 LR=$243,403 regla=$223,835 Δ(final-LR)=$11,175
+  sens market_k          ×1.2: final=$86,110 LR=$81,294 regla=$70,148 Δ(final-LR)=$4,816
+  sens market_k          ×1.5: final=$38,647 LR=$37,043 regla=$29,688 Δ(final-LR)=$1,604
+  sens market_sigma      ×0.5: final=$62,755 LR=$55,312 regla=$32,814 Δ(final-LR)=$7,443
+  sens market_sigma      ×0.8: final=$113,377 LR=$105,883 regla=$87,385 Δ(final-LR)=$7,494
+  sens market_sigma      ×1.2: final=$180,626 LR=$173,583 regla=$159,654 Δ(final-LR)=$7,043
+  sens market_sigma      ×1.5: final=$225,612 LR=$218,971 regla=$207,782 Δ(final-LR)=$6,641
+  sens monthly_requests  ×0.5: final=$73,869 LR=$70,266 regla=$62,175 Δ(final-LR)=$3,603
+  sens monthly_requests  ×0.8: final=$118,190 LR=$112,425 regla=$99,480 Δ(final-LR)=$5,765
+  sens monthly_requests  ×1.2: final=$177,285 LR=$168,638 regla=$149,219 Δ(final-LR)=$8,647
+  sens monthly_requests  ×1.5: final=$221,606 LR=$210,798 regla=$186,524 Δ(final-LR)=$10,808
+  precios independientes: final=$341,008 LR=$333,763 Δ=$7,245
