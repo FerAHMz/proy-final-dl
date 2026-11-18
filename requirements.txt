@@ -9,3 +9,5 @@ uvicorn>=0.29
 pydantic>=2.6
 httpx>=0.27
 pytest>=8.0
+shap>=0.45
+scipy>=1.11
