@@ -140,5 +140,10 @@ python xai/lab10_xai.py      # ~20 s en Apple M4 Pro; requiere haber corrido el 
 | **Fernando Hernández** | Pipeline de datos (descarga, división temporal, preprocesamiento, `config`/`utils`), EDA, codebook, modelo de valor (simulador de subastas, curva de valor, sensibilidad), documentación |
 | **Fernando Rueda** | Arquitecturas (LR, Wide & Deep, DeepFM), entrenamiento e iteraciones, evaluación con IC, explicabilidad y monitoreo, API FastAPI + demo + Docker, benchmark de latencia, pruebas |
 
+En el **laboratorio 10**, Fernando Rueda implementó Integrated Gradients por campo, la
+comparación con KernelSHAP y las explicaciones locales y globales. Fernando Hernández hizo el
+análisis de atajos y proxies (ablación en inferencia), el análisis de errores, la atribución
+por grupos y la documentación.
+
 Los dos revisamos todas las partes para poder responder preguntas sobre cualquiera de ellas
 en la presentación.
