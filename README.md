@@ -108,3 +108,13 @@ Con Docker:
 ```bash
 docker build -t ctr-bidder . && docker run -p 8000:8000 ctr-bidder
 ```
+
+## Distribución del trabajo
+
+| Integrante | Responsabilidades |
+|---|---|
+| **Fernando Hernández** | Pipeline de datos (descarga, división temporal, preprocesamiento, `config`/`utils`), EDA, codebook, modelo de valor (simulador de subastas, curva de valor, sensibilidad), documentación |
+| **Fernando Rueda** | Arquitecturas (LR, Wide & Deep, DeepFM), entrenamiento e iteraciones, evaluación con IC, explicabilidad y monitoreo, API FastAPI + demo + Docker, benchmark de latencia, pruebas |
+
+Los dos revisamos todas las partes para poder responder preguntas sobre cualquiera de ellas
+en la presentación.
