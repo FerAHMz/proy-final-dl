@@ -1,0 +1,58 @@
+
+===== Etapa 5: 05_evaluar.py =====
+it1_lr             test AUC=0.7365 (0.7348114043801764, 0.7381843458653239) logloss=0.4022
+it2_widedeep       test AUC=0.7415 (0.7398755743572875, 0.7432495987331613) logloss=0.4003
+it3_deepfm         test AUC=0.7412 (0.7393678261041814, 0.7428267257335084) logloss=0.4004
+it4_deepfm_grande  test AUC=0.7416 (0.7401545147258876, 0.7433186873682852) logloss=0.4000
+it5_deepfm_reg     test AUC=0.7412 (0.7395156190563171, 0.7428554664360707) logloss=0.4011
+
+===== Etapa 6: 08_benchmark_api.py =====
+it1_lr             p50=0.005ms p99=0.007ms lote=18,868,689/s  $0.0001/M  5MB
+it2_widedeep       p50=0.035ms p99=0.046ms lote=2,755,091/s  $0.0004/M  85MB
+it3_deepfm         p50=0.042ms p99=0.053ms lote=2,087,697/s  $0.0004/M  85MB
+it4_deepfm_grande  p50=0.055ms p99=0.069ms lote=978,516/s  $0.0006/M  126MB
+it5_deepfm_reg     p50=0.042ms p99=0.055ms lote=2,109,453/s  $0.0004/M  85MB
+
+===== Etapa 7: 06_modelo_valor.py =====
+it0_base           AUC=0.5000 ll=0.4548 α*=0.80 utilidad/mes=$8,014 [6,511; 9,576] (α=1: $4,656) ROI=3.1% win=39.4%
+it0_regla          AUC=0.7259 ll=0.4062 α*=0.95 utilidad/mes=$124,349 [122,852; 125,810] (α=1: $123,067) ROI=34.3% win=32.0%
+it1_lr             AUC=0.7365 ll=0.4022 α*=0.90 utilidad/mes=$140,532 [139,142; 141,874] (α=1: $139,161) ROI=39.8% win=30.9%
+it2_widedeep       AUC=0.7415 ll=0.4003 α*=0.90 utilidad/mes=$150,609 [148,992; 152,234] (α=1: $145,505) ROI=37.4% win=34.7%
+it3_deepfm         AUC=0.7412 ll=0.4004 α*=0.90 utilidad/mes=$150,086 [148,440; 151,727] (α=1: $145,637) ROI=38.0% win=34.6%
+it4_deepfm_grande  AUC=0.7416 ll=0.4000 α*=0.90 utilidad/mes=$151,752 [149,964; 153,221] (α=1: $147,646) ROI=39.1% win=33.9%
+it5_deepfm_reg     AUC=0.7412 ll=0.4011 α*=0.90 utilidad/mes=$147,737 [146,107; 149,173] (α=1: $141,455) ROI=35.0% win=37.4%
+Pendiente local: $13,620 al mes por cada +0.01 de AUC
+  sens value_per_click   ×0.5: final=$73,869 LR=$70,266 regla=$62,175 Δ(final-LR)=$3,603
+  sens value_per_click   ×0.8: final=$118,190 LR=$112,425 regla=$99,480 Δ(final-LR)=$5,765
+  sens value_per_click   ×1.2: final=$177,285 LR=$168,638 regla=$149,220 Δ(final-LR)=$8,647
+  sens value_per_click   ×1.5: final=$221,606 LR=$210,798 regla=$186,524 Δ(final-LR)=$10,808
+  sens market_k          ×0.5: final=$560,965 LR=$548,650 regla=$530,569 Δ(final-LR)=$12,315
+  sens market_k          ×0.8: final=$254,578 LR=$243,403 regla=$223,835 Δ(final-LR)=$11,175
+  sens market_k          ×1.2: final=$86,110 LR=$81,294 regla=$70,148 Δ(final-LR)=$4,816
+  sens market_k          ×1.5: final=$38,647 LR=$37,043 regla=$29,688 Δ(final-LR)=$1,604
+  sens market_sigma      ×0.5: final=$62,755 LR=$55,312 regla=$32,814 Δ(final-LR)=$7,443
+  sens market_sigma      ×0.8: final=$113,377 LR=$105,883 regla=$87,385 Δ(final-LR)=$7,494
+  sens market_sigma      ×1.2: final=$180,626 LR=$173,583 regla=$159,654 Δ(final-LR)=$7,043
+  sens market_sigma      ×1.5: final=$225,612 LR=$218,971 regla=$207,782 Δ(final-LR)=$6,641
+  sens monthly_requests  ×0.5: final=$73,869 LR=$70,266 regla=$62,175 Δ(final-LR)=$3,603
+  sens monthly_requests  ×0.8: final=$118,190 LR=$112,425 regla=$99,480 Δ(final-LR)=$5,765
+  sens monthly_requests  ×1.2: final=$177,285 LR=$168,638 regla=$149,219 Δ(final-LR)=$8,647
+  sens monthly_requests  ×1.5: final=$221,606 LR=$210,798 regla=$186,524 Δ(final-LR)=$10,808
+  precios independientes: final=$341,008 LR=$333,763 Δ=$7,245
+
+===== Etapa 8: 07_exportar.py =====
+Exportado it5_deepfm_reg → /Users/ferahmz/Documents/uvg/octavo/Deep Learning/proy-final-dl/models/final (model.pt 84.8 MB, α=0.9)
+
+===== Etapa 9: 08_benchmark_api.py =====
+  from starlette.testclient import TestClient as TestClient  # noqa
+it1_lr             p50=0.005ms p99=0.007ms lote=19,066,314/s  $0.0001/M  5MB
+it2_widedeep       p50=0.036ms p99=0.044ms lote=2,575,534/s  $0.0004/M  85MB
+it3_deepfm         p50=0.043ms p99=0.054ms lote=2,173,922/s  $0.0004/M  85MB
+it4_deepfm_grande  p50=0.056ms p99=0.073ms lote=980,093/s  $0.0006/M  126MB
+it5_deepfm_reg     p50=0.043ms p99=0.055ms lote=2,295,964/s  $0.0004/M  85MB
+API e2e p50=0.72ms p99=0.88ms
+
+===== Etapa 10: 09_explicabilidad.py =====
+Top campos: app_id (0.0527), site_id (0.0255), device_model (0.0159), site_domain (0.0136), banner_pos (0.0118), device_id (0.0098)
+Top interacciones: ['device_id × device_ip', 'device_ip × C14', 'app_id × device_id', 'site_id × device_model', 'C14 × C17']
+Monitoreo: {'psi_pctr_val_vs_test': 0.10644488362368625, 'oov_val': 0.04748986956521739, 'oov_test': 0.07729221739130435, 'calibracion_val': 1.1373201678054756, 'calibracion_test': 1.1153966032016636, 'umbrales_alerta': {'psi': 0.2, 'calibracion_fuera_de': [0.9, 1.1], 'oov_aumento_relativo': 0.25}}
