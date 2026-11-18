@@ -1,0 +1,593 @@
+{
+  "modelo": "it5_deepfm_reg",
+  "parametros": {
+    "ig_pasos": 64,
+    "linea_base": "OOV por campo",
+    "n_global": 5000,
+    "kshap_nsamples": 2048,
+    "n_kshap": 30,
+    "semilla": 42,
+    "alpha": 0.9
+  },
+  "logit_base": -1.0697848796844482,
+  "p_base": 0.25544399626074504,
+  "locales": {
+    "acierto_confiado": {
+      "fila_test": 399015,
+      "p": 0.7569484114646912,
+      "click": 1,
+      "compra": true,
+      "puja_cpm": 20.437604904174805,
+      "precio_cpm": 8.198605020168541,
+      "n_oov": 1,
+      "logit": 1.1360211372375488,
+      "suma_atribuciones": 2.206516742706299,
+      "error_completitud": 0.0007107257843017578,
+      "top": [
+        {
+          "campo": "device_id",
+          "valor": "0f7c61dc",
+          "atribucion": 1.6266100406646729
+        },
+        {
+          "campo": "site_id",
+          "valor": "203b00f1",
+          "atribucion": 1.0273383855819702
+        },
+        {
+          "campo": "C17",
+          "valor": "2684",
+          "atribucion": 0.2799694538116455
+        },
+        {
+          "campo": "app_id",
+          "valor": "ecad2386",
+          "atribucion": -0.24074819684028625
+        },
+        {
+          "campo": "site_domain",
+          "valor": "c4e18dd6",
+          "atribucion": -0.15538252890110016
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.14892703294754028
+        },
+        {
+          "campo": "C16",
+          "valor": "50",
+          "atribucion": -0.11918243765830994
+        },
+        {
+          "campo": "device_conn_type",
+          "valor": "0",
+          "atribucion": -0.10981032252311707
+        }
+      ],
+      "categoria_dominante_train": {
+        "campo": "device_id",
+        "valor": "0f7c61dc",
+        "n_train": 6503,
+        "ctr_train": 0.7676457019836999
+      }
+    },
+    "error_FP_confiado": {
+      "fila_test": 3611732,
+      "p": 0.9786121845245361,
+      "click": 0,
+      "compra": true,
+      "puja_cpm": 26.422529220581055,
+      "precio_cpm": 17.753498660935996,
+      "n_oov": 0,
+      "logit": 3.823312282562256,
+      "suma_atribuciones": 4.899745464324951,
+      "error_completitud": 0.006648540496826172,
+      "top": [
+        {
+          "campo": "app_id",
+          "valor": "95827a92",
+          "atribucion": 3.995763063430786
+        },
+        {
+          "campo": "device_ip",
+          "valor": "2a0414f5",
+          "atribucion": 0.659281313419342
+        },
+        {
+          "campo": "C21",
+          "valor": "15",
+          "atribucion": 0.316999614238739
+        },
+        {
+          "campo": "C17",
+          "valor": "112",
+          "atribucion": 0.3063191771507263
+        },
+        {
+          "campo": "device_id",
+          "valor": "a99f214a",
+          "atribucion": 0.16887949407100677
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.16429099440574646
+        },
+        {
+          "campo": "C16",
+          "valor": "50",
+          "atribucion": -0.16123151779174805
+        },
+        {
+          "campo": "device_conn_type",
+          "valor": "0",
+          "atribucion": -0.13304102420806885
+        }
+      ],
+      "categoria_dominante_train": {
+        "campo": "app_id",
+        "valor": "95827a92",
+        "n_train": 6074,
+        "ctr_train": 0.9598287783997366
+      }
+    },
+    "error_FN": {
+      "fila_test": 3389939,
+      "p": 0.0005211757961660624,
+      "click": 1,
+      "compra": false,
+      "puja_cpm": 0.014071745797991753,
+      "precio_cpm": 1.2111626765131396,
+      "n_oov": 0,
+      "logit": -7.558900356292725,
+      "suma_atribuciones": -6.491730213165283,
+      "error_completitud": 0.0026144981384277344,
+      "top": [
+        {
+          "campo": "site_id",
+          "valor": "5f54e2e5",
+          "atribucion": -3.2347571849823
+        },
+        {
+          "campo": "app_id",
+          "valor": "ecad2386",
+          "atribucion": -0.7312161326408386
+        },
+        {
+          "campo": "C14",
+          "valor": "20153",
+          "atribucion": -0.6278347969055176
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.5406547784805298
+        },
+        {
+          "campo": "app_category",
+          "valor": "07d7df22",
+          "atribucion": 0.4942806661128998
+        },
+        {
+          "campo": "device_ip",
+          "valor": "a9cf15f8",
+          "atribucion": -0.42205363512039185
+        },
+        {
+          "campo": "site_domain",
+          "valor": "c4e18dd6",
+          "atribucion": -0.40326040983200073
+        },
+        {
+          "campo": "C21",
+          "valor": "61",
+          "atribucion": -0.39867785573005676
+        }
+      ],
+      "categoria_dominante_train": {
+        "campo": "site_id",
+        "valor": "5f54e2e5",
+        "n_train": 148,
+        "ctr_train": 0.0
+      }
+    },
+    "cerca_umbral": {
+      "fila_test": 3274503,
+      "p": 0.2138780802488327,
+      "click": 1,
+      "compra": false,
+      "puja_cpm": 5.774707794189453,
+      "precio_cpm": 5.777887532108995,
+      "n_oov": 0,
+      "logit": -1.3017057180404663,
+      "suma_atribuciones": -0.23214825987815857,
+      "error_completitud": 0.00022742152214050293,
+      "top": [
+        {
+          "campo": "app_id",
+          "valor": "ecad2386",
+          "atribucion": -0.6438278555870056
+        },
+        {
+          "campo": "app_category",
+          "valor": "07d7df22",
+          "atribucion": 0.5083291530609131
+        },
+        {
+          "campo": "site_domain",
+          "valor": "f3845767",
+          "atribucion": -0.31350234150886536
+        },
+        {
+          "campo": "C17",
+          "valor": "2684",
+          "atribucion": 0.2712423503398895
+        },
+        {
+          "campo": "site_category",
+          "valor": "28905ebd",
+          "atribucion": 0.22983160614967346
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.1810675859451294
+        },
+        {
+          "campo": "device_model",
+          "valor": "be6db1d7",
+          "atribucion": 0.18062883615493774
+        },
+        {
+          "campo": "device_ip",
+          "valor": "0e947881",
+          "atribucion": -0.14438462257385254
+        }
+      ]
+    },
+    "subgrupo_conexion3": {
+      "fila_test": 2737757,
+      "p": 0.16600129008293152,
+      "click": 1,
+      "compra": true,
+      "puja_cpm": 4.482034683227539,
+      "precio_cpm": 2.6417083770355583,
+      "n_oov": 1,
+      "logit": -1.6142362356185913,
+      "suma_atribuciones": -0.5396848917007446,
+      "error_completitud": 0.0047664642333984375,
+      "top": [
+        {
+          "campo": "app_id",
+          "valor": "685d1c4c",
+          "atribucion": -1.783719539642334
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.5779321789741516
+        },
+        {
+          "campo": "device_id",
+          "valor": "a99f214a",
+          "atribucion": 0.499036580324173
+        },
+        {
+          "campo": "site_id",
+          "valor": "85f751fd",
+          "atribucion": 0.4543037712574005
+        },
+        {
+          "campo": "device_model",
+          "valor": "a5bce124",
+          "atribucion": 0.44439786672592163
+        },
+        {
+          "campo": "site_domain",
+          "valor": "c4e18dd6",
+          "atribucion": -0.43352100253105164
+        },
+        {
+          "campo": "app_category",
+          "valor": "8ded1f7a",
+          "atribucion": 0.3922741413116455
+        },
+        {
+          "campo": "C17",
+          "valor": "2676",
+          "atribucion": 0.25525036454200745
+        }
+      ]
+    },
+    "muchos_OOV": {
+      "fila_test": 1748364,
+      "p": 0.013074641115963459,
+      "click": 0,
+      "compra": false,
+      "puja_cpm": 0.35301530361175537,
+      "precio_cpm": 0.6372540303146466,
+      "n_oov": 6,
+      "logit": -4.323919296264648,
+      "suma_atribuciones": -3.2619218826293945,
+      "error_completitud": 0.007787466049194336,
+      "top": [
+        {
+          "campo": "app_id",
+          "valor": "5adb10d9",
+          "atribucion": -2.3207340240478516
+        },
+        {
+          "campo": "site_domain",
+          "valor": "c4e18dd6",
+          "atribucion": -0.3815382421016693
+        },
+        {
+          "campo": "banner_pos",
+          "valor": "0",
+          "atribucion": -0.2724165916442871
+        },
+        {
+          "campo": "app_category",
+          "valor": "cef3e649",
+          "atribucion": 0.25646543502807617
+        },
+        {
+          "campo": "device_model",
+          "valor": "330221b0",
+          "atribucion": -0.242720827460289
+        },
+        {
+          "campo": "device_conn_type",
+          "valor": "3",
+          "atribucion": -0.17909523844718933
+        },
+        {
+          "campo": "site_category",
+          "valor": "50e219e0",
+          "atribucion": 0.17882268130779266
+        },
+        {
+          "campo": "app_domain",
+          "valor": "2347f47a",
+          "atribucion": 0.16303125023841858
+        }
+      ]
+    }
+  },
+  "completitud": {
+    "error_medio": 0.002724587684497237,
+    "error_max": 0.018886566162109375
+  },
+  "costo": {
+    "ig_ms_por_instancia": 0.0538260416011326,
+    "dispositivo": "mps"
+  },
+  "global": {
+    "app_id": {
+      "media_abs": 0.6612957119941711,
+      "media": -0.6377007365226746,
+      "frac_total_abs": 0.17217355966567993
+    },
+    "app_category": {
+      "media_abs": 0.5274313688278198,
+      "media": 0.5272824168205261,
+      "frac_total_abs": 0.13732092082500458
+    },
+    "site_domain": {
+      "media_abs": 0.3559150695800781,
+      "media": -0.33157655596733093,
+      "frac_total_abs": 0.09266529977321625
+    },
+    "site_id": {
+      "media_abs": 0.34872448444366455,
+      "media": 0.16878359019756317,
+      "frac_total_abs": 0.0907931700348854
+    },
+    "banner_pos": {
+      "media_abs": 0.2944261431694031,
+      "media": -0.21945825219154358,
+      "frac_total_abs": 0.07665617018938065
+    },
+    "device_model": {
+      "media_abs": 0.21409308910369873,
+      "media": -0.07516476511955261,
+      "frac_total_abs": 0.055740825831890106
+    },
+    "C17": {
+      "media_abs": 0.16048473119735718,
+      "media": 0.15776914358139038,
+      "frac_total_abs": 0.041783466935157776
+    },
+    "device_id": {
+      "media_abs": 0.14865615963935852,
+      "media": 0.08043579012155533,
+      "frac_total_abs": 0.038703806698322296
+    },
+    "C16": {
+      "media_abs": 0.13890239596366882,
+      "media": -0.13018615543842316,
+      "frac_total_abs": 0.036164335906505585
+    },
+    "site_category": {
+      "media_abs": 0.12444209307432175,
+      "media": 0.1165553480386734,
+      "frac_total_abs": 0.032399483025074005
+    },
+    "C14": {
+      "media_abs": 0.10649625211954117,
+      "media": -0.04154733940958977,
+      "frac_total_abs": 0.027727140113711357
+    },
+    "C21": {
+      "media_abs": 0.09430956095457077,
+      "media": 0.022508405148983,
+      "frac_total_abs": 0.024554239585995674
+    },
+    "device_ip": {
+      "media_abs": 0.08899573236703873,
+      "media": -0.007722845301032066,
+      "frac_total_abs": 0.02317074127495289
+    },
+    "device_conn_type": {
+      "media_abs": 0.07550851255655289,
+      "media": -0.05238015204668045,
+      "frac_total_abs": 0.019659237936139107
+    },
+    "C20": {
+      "media_abs": 0.06606442481279373,
+      "media": 0.03469356894493103,
+      "frac_total_abs": 0.017200395464897156
+    },
+    "C15": {
+      "media_abs": 0.06528287380933762,
+      "media": -0.06246943399310112,
+      "frac_total_abs": 0.01699691079556942
+    },
+    "C19": {
+      "media_abs": 0.06446519494056702,
+      "media": -0.06002405285835266,
+      "frac_total_abs": 0.016784021630883217
+    },
+    "app_domain": {
+      "media_abs": 0.06418219208717346,
+      "media": 0.041901472955942154,
+      "frac_total_abs": 0.016710340976715088
+    },
+    "device_type": {
+      "media_abs": 0.05842806398868561,
+      "media": -0.0559762679040432,
+      "frac_total_abs": 0.015212208032608032
+    },
+    "C18": {
+      "media_abs": 0.05647452920675278,
+      "media": -0.05591949447989464,
+      "frac_total_abs": 0.014703589491546154
+    },
+    "hour_of_day": {
+      "media_abs": 0.050076499581336975,
+      "media": -0.04116872698068619,
+      "frac_total_abs": 0.01303781196475029
+    },
+    "weekday": {
+      "media_abs": 0.04487289488315582,
+      "media": -0.041335877031087875,
+      "frac_total_abs": 0.01168301235884428
+    },
+    "C1": {
+      "media_abs": 0.031338658183813095,
+      "media": -0.010531262494623661,
+      "frac_total_abs": 0.008159266784787178
+    }
+  },
+  "spearman_ig_vs_permutacion": 0.7361660079051384,
+  "global_grupos": {
+    "publisher app (app_id, app_domain, app_category)": {
+      "media_abs": 0.34800663590431213,
+      "media": -0.06851683557033539,
+      "suma_media_abs_individual": 1.2529093027114868
+    },
+    "publisher sitio (site_id, site_domain, site_category)": {
+      "media_abs": 0.3973695933818817,
+      "media": -0.04623761773109436,
+      "suma_media_abs_individual": 0.829081654548645
+    },
+    "usuario (device_id, device_ip)": {
+      "media_abs": 0.21651113033294678,
+      "media": 0.07271294295787811,
+      "suma_media_abs_individual": 0.23765188455581665
+    },
+    "dispositivo (modelo, tipo, conexión)": {
+      "media_abs": 0.25546082854270935,
+      "media": -0.18352118134498596,
+      "suma_media_abs_individual": 0.34802964329719543
+    },
+    "anuncio (banner_pos, C1, C14-C21)": {
+      "media_abs": 0.4668121933937073,
+      "media": -0.3651648461818695,
+      "suma_media_abs_individual": 1.078244686126709
+    },
+    "tiempo (hora, día)": {
+      "media_abs": 0.0854639858007431,
+      "media": -0.08250460028648376,
+      "suma_media_abs_individual": 0.0949493944644928
+    }
+  },
+  "errores_FP_vs_VP_top20": {
+    "n_fp": 681,
+    "n_tp": 319,
+    "dif_media": {
+      "site_id": -0.058891355991363525,
+      "site_domain": -0.0427088625729084,
+      "C14": -0.042476292699575424,
+      "device_id": -0.02598537504673004,
+      "C16": -0.02480604499578476,
+      "app_id": -0.018623948097229004,
+      "app_domain": 0.014933684840798378,
+      "C20": -0.011399328708648682
+    },
+    "oov_fp": 1.0190895741556534,
+    "oov_tp": 0.8495297805642633
+  },
+  "errores_FN": {
+    "n": 517,
+    "media_atrib": {
+      "app_id": -0.3848462700843811,
+      "app_category": 0.493193656206131,
+      "site_domain": -0.2035387009382248,
+      "site_id": 0.3574123978614807,
+      "banner_pos": -0.21281014382839203,
+      "device_model": -0.06064100190997124
+    },
+    "p_media": 0.26892805099487305
+  },
+  "ablacion": {
+    "auc_base": 0.7411518064534117,
+    "utilidad_base": 147737.4601733329,
+    "grupos": {
+      "identificadores_usuario (device_id, device_ip)": {
+        "auc": 0.7342349240690429,
+        "delta_auc": -0.006916882384368828,
+        "utilidad_mensual": 135002.21858671267,
+        "delta_utilidad": -12735.241586620221
+      },
+      "solo device_ip": {
+        "auc": 0.7423759674528754,
+        "delta_auc": 0.0012241609994636526,
+        "utilidad_mensual": 144842.38713785654,
+        "delta_utilidad": -2895.073035476351
+      },
+      "tiempo (hora, día)": {
+        "auc": 0.7406905602641056,
+        "delta_auc": -0.00046124618930609707,
+        "utilidad_mensual": 141084.41868379837,
+        "delta_utilidad": -6653.041489534517
+      },
+      "publisher (site_*, app_*)": {
+        "auc": 0.6437707608417933,
+        "delta_auc": -0.09738104561161842,
+        "utilidad_mensual": 65475.00041808556,
+        "delta_utilidad": -82262.45975524733
+      },
+      "anonimizadas C14-C21": {
+        "auc": 0.7311100530832884,
+        "delta_auc": -0.010041753370123363,
+        "utilidad_mensual": 120756.05732918091,
+        "delta_utilidad": -26981.402844151977
+      }
+    }
+  },
+  "device_ip_memorizacion": {
+    "frac_vista_en_train": 0.4214,
+    "media_abs_ig_vista": 0.21119056642055511,
+    "media_abs_ig_oov": 0.0,
+    "corr_signo_ig_con_clic": 0.04337331834483781
+  },
+  "kernelshap": {
+    "spearman_medio_vs_ig": 0.88083194587377,
+    "spearman_min": 0.6526482746559236,
+    "top3_coinciden_frac": null,
+    "s_por_instancia": 0.03247676813625731,
+    "dif_suma_vs_ig": 0.0025912813842296927
+  }
+}
