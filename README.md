@@ -109,6 +109,30 @@ Con Docker:
 docker build -t ctr-bidder . && docker run -p 8000:8000 ctr-bidder
 ```
 
+## Laboratorio 10: Explainable AI
+
+El script [xai/lab10_xai.py](xai/lab10_xai.py) explica el modelo final (`it5_deepfm_reg`) sin
+reentrenarlo y regenera todas las figuras y tablas del PDF del laboratorio, con semilla fija
+(`SEED = 42`):
+
+```bash
+python xai/lab10_xai.py      # ~20 s en Apple M4 Pro; requiere haber corrido el pipeline (etapas 1-7)
+```
+
+- **Método principal:** Integrated Gradients por campo, aplicado sobre los embeddings y los
+  pesos lineales. La línea base es la categoría OOV de cada campo y se usan 64 pasos. El
+  script verifica la completitud: la suma de atribuciones es igual a logit(x) − logit(base).
+- **Alternativa de control:** KernelSHAP (`shap`) con la misma línea base y 2,048 coaliciones,
+  aplicado a 30 instancias para comparar concordancia y costo.
+- **Locales:** 6 casos del día de prueba (acierto confiado, FP confiado, FN, caso en el
+  umbral de puja, subgrupo de conexión tipo 3 y caso con muchos OOV) →
+  `reports/xai/xai_locales.png`.
+- **Global:** 5,000 impresiones de prueba, por campo y por grupo de campos correlacionados →
+  `reports/xai/xai_global.png`.
+- **Atajos y proxies:** se reemplazan grupos de campos por OOV en inferencia y se mide el
+  cambio en AUC y en USD/mes.
+- **Resultados numéricos:** `reports/xai/lab10_resultados.json`.
+
 ## Distribución del trabajo
 
 | Integrante | Responsabilidades |
